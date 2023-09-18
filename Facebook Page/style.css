@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+background:#415e9b;
+height: 82px;
+border-bottom: 1px solid #133783;
+}
+.logo{
+    color: #fff;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+}
+.main-header{
+    width: 998px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.facbook-logo-text{
+    width: 50%;
+    float: left;
+}
+.facebook-login-sign{
+    width: 50%;
+    float: left;
+}
+.facebook-login-sign label{
+    color: #fff;
+}
+.email{
+    float:left;
+}
+.email label{
+    padding-bottom: 10px;
+}
+.email input[type="email"]{
+    height: 22px;
+    width: 150px;
+    border: 1px solid #1d2a5b;
+}
+.password{
+    float:left;
+    margin-left: 15px;
+}
+.password label{
+    padding-bottom: 10px;
+}
+.password input[type="text"]{
+    height: 22px;
+    width: 150px;
+    border: 1px solid #1d2a5b;
+}
+.password a{
+    color: #8fb1d8;
+    text-decoration: none;
+}
+.login-button{
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.login-button input[type="submit"]{
+    background: #4267b2;
+    border: 1px solid #29487d;
+    border-radius: 2px;
+    color: #fff;
+    height: 22px;
+    width: 50px;
+}
+.main-content{
+    width: 998px;
+    margin: 0 auto;
+}
+.connect-img p{
+    color:#0e385f;
+    font-size: 22px;
+    font-weight: 700;
+}
+.position-fix{
+    clear: both;
+}
+
+.section-contant{
+    background: linear-gradient(#fff,#d9ddeb);
+    display: flex;
+    height: 100vh;
+}
+.create-account h2{
+    font-size: 40px;
+}
+.create-contant-para{
+font-size:16px;
+font-weight: bold;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.connect-img{
+    width: 50%;
+    float: left;
+}
+.create-account{
+    width: 50%;
+    float: left;
+}
+.account input[type="text"]{
+height: 35px;
+}
