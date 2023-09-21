@@ -3,17 +3,28 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+@font-face {
+    font-family: 'MyHandwritingFont';
+    src: url('path-to-your-font/MyHandwritingFont.woff2') format('woff2'),
+         url('path-to-your-font/MyHandwritingFont.woff') format('woff');
+    /* Add additional src lines for different font file formats if available */
+  }
+
+  
+
 header{
 background:#415e9b;
-height: 82px;
+height: 90px;
 border-bottom: 1px solid #133783;
 }
 .logo{
     color: #fff;
     font-weight: 900;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'MyHandwritingFont', cursive;
     font-size: 45px;
-    margin: 10px 0px 10px -45px;
+    margin: 0px 0px 0px -7.5rem;
+    padding: 5px;
 }
 .main-header{
     width: 998px;
@@ -36,11 +47,14 @@ border-bottom: 1px solid #133783;
 }
 .email label{
     padding-bottom: 10px;
+    margin-left: 30px;
 }
 .email input[type="email"]{
-    height: 22px;
-    width: 150px;
+    height: 25px;
+    width: 160px;
+    margin-left: 27px;
     border: 1px solid #1d2a5b;
+
 }
 .password{
     float:left;
@@ -48,15 +62,18 @@ border-bottom: 1px solid #133783;
 }
 .password label{
     padding-bottom: 10px;
+    margin-left: 25px;
 }
 .password input[type="text"]{
-    height: 22px;
-    width: 150px;
+    height: 24px;
+    width: 160px;
     border: 1px solid #1d2a5b;
+    margin-left: 25px;
 }
 .password a{
     color: #8fb1d8;
     text-decoration: none;
+    margin-left: 25px;
 }
 .login-button{
     float: left;
@@ -68,38 +85,39 @@ border-bottom: 1px solid #133783;
     border: 1px solid #29487d;
     border-radius: 2px;
     color: #fff;
+    font-weight: 600;
     height: 22px;
     width: 50px;
 }
-
-
 /* <!-- Section 1 --> */
-.main-content{
-    width: 998px;
-    margin: 0 auto;
+.main-content {
+    background: linear-gradient(#fff, #d9ddeb) !important;
+    height: 87vh; 
+    width: 100%; 
 }
+
 .connect-img p{
-    color:#0e385f;
-    font-size: 22px;
-    font-weight: 700;
-    margin: 10px 20px 10px 200px;
+    color: #0e385f;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 40px 20px 10px 130px;
 }
 .position-fix{
     clear: both;
 }
 
-.section-contant{
-    background: linear-gradient(#fff,#d9ddeb);
-    height: 100%;
-    width: 100%;
-}
 .create-account h2{
-    font-size: 40px;
+    font-size: 45px;
+    font-weight: 900;
+    color: #0b0b0b;
+    margin-top: 27px;
+
 }
 .create-contant-para{
-font-size:16px;
-font-weight: bold;
-margin-top: 20px;
+font-size:23px;
+font-weight: 900;
+color: #0e385f;
+margin-top: 10px;
 margin-bottom: 20px;
 }
 
@@ -108,26 +126,32 @@ margin-bottom: 20px;
     float: left;
 }
 .connect-img img{
-width: 100%;
-height: 100%;
+    width: 77%;
+    height: 100%;
+    margin-left: 128px;
 }
 .create-account{
     width: 50%;
     float: left;
 }
 .account input[type="text"]{
-height: 36px;
-margin-bottom: 20px;
-padding: 10px;
-border-radius: 5px;
-border: 1px solid #bdc7d8;
+    height: 41px;
+    margin-bottom: 10px;
+    padding: 10px 0 9px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccd2dc;
+    font-size: 22px;
+    font-weight: 500;
+    width: 32%;
 }
-
+input::placeholder{
+  color:#9b9d9f; 
+}
 .account .mobile{
-    width: 90% !important;
+    width: 65% !important;
 }
 .account .password{
-    width: 90% !important;
+    width: 65% !important;
 }
 .account label{
     font-weight: bold;
@@ -138,20 +162,59 @@ border: 1px solid #bdc7d8;
     text-decoration: none;
     color: #3677bc;
 }
-.account input[type="radio"]{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+
+
 .account .by_create{
     color: #77777a;
 }
 .account input[type="submit"]{
-    padding: 10px 50px;
+    padding: 8px 65px;
     background: linear-gradient(#95d67c,#65a953);
     border: 1px solid #3b6e22;
     border-radius: 5px;
     font-size: 25px;
     color: #fff;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom: 15px;
+}
+.birth{
+    margin-top: 24px;
+    font-weight: 900;
+    color: #77777a;
+    font-size: 20px;
+}
+.gen{
+    margin-top: 10px;
+    font-weight: 900;
+    color: #77777a;
+    font-size: 20px;
+    margin-bottom: 1px;
+}
+.account .gender{
+    font-size: 22px;
+    font-weight: 500;
+    color: #081e32;
+    margin-left: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.account input[type="radio"]{
+    margin-bottom: 20px;
+    margin-right: -20px;
+    margin-left: 15px;
+}
+
+select{
+    padding: 5px;
+    font-size: 20px;
+    /* background-color: white; */
+    border: 1px solid #ccd2dc;   
+    color: gray;
+
+}
+
+.ques{
+    width: 30px;
+    height: 37px;
+    margin-bottom: -11px;
+    margin-left: 5px;
 }
