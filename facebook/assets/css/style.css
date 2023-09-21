@@ -12,7 +12,8 @@ border-bottom: 1px solid #133783;
     color: #fff;
     font-weight: 900;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 35px;
+    font-size: 45px;
+    margin: 10px 0px 10px -45px;
 }
 .main-header{
     width: 998px;
@@ -43,7 +44,7 @@ border-bottom: 1px solid #133783;
 }
 .password{
     float:left;
-    margin-left: 15px;
+    
 }
 .password label{
     padding-bottom: 10px;
@@ -70,6 +71,9 @@ border-bottom: 1px solid #133783;
     height: 22px;
     width: 50px;
 }
+
+
+/* <!-- Section 1 --> */
 .main-content{
     width: 998px;
     margin: 0 auto;
@@ -78,6 +82,7 @@ border-bottom: 1px solid #133783;
     color:#0e385f;
     font-size: 22px;
     font-weight: 700;
+    margin: 10px 20px 10px 200px;
 }
 .position-fix{
     clear: both;
@@ -85,8 +90,8 @@ border-bottom: 1px solid #133783;
 
 .section-contant{
     background: linear-gradient(#fff,#d9ddeb);
-    display: flex;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
 }
 .create-account h2{
     font-size: 40px;
@@ -102,10 +107,51 @@ margin-bottom: 20px;
     width: 50%;
     float: left;
 }
+.connect-img img{
+width: 100%;
+height: 100%;
+}
 .create-account{
     width: 50%;
     float: left;
 }
 .account input[type="text"]{
-height: 35px;
+height: 36px;
+margin-bottom: 20px;
+padding: 10px;
+border-radius: 5px;
+border: 1px solid #bdc7d8;
+}
+
+.account .mobile{
+    width: 90% !important;
+}
+.account .password{
+    width: 90% !important;
+}
+.account label{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.account a{
+    text-decoration: none;
+    color: #3677bc;
+}
+.account input[type="radio"]{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.account .by_create{
+    color: #77777a;
+}
+.account input[type="submit"]{
+    padding: 10px 50px;
+    background: linear-gradient(#95d67c,#65a953);
+    border: 1px solid #3b6e22;
+    border-radius: 5px;
+    font-size: 25px;
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
