@@ -18,17 +18,18 @@
 
 <body>
     <!-- -- nav bar section  --  -->
+    <header class="header-section">
+    <span class="logo">Digian</span>
     <nav class="navbar">
-        <span class="logo">Digian</span>
         <ul class="nav-list">
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Contact us</a></li>
         </ul>
-        <button class="get-quote">Get a quote</button>
     </nav>
-
+    <button class="get-quote">Get a quote</button>
+</header>
 
     <div class="contain">
         <div class="img-container">
@@ -125,7 +126,7 @@
                     look even slightly believable.
                 </div>
                 <div class="case-read-more">
-                    <a class="case read-more" href="#">Read More</a>
+                    <a href="#">Read More</a>
                     <i class="fa fa-long-arrow-right"></i>
                 </div>
             </div>
@@ -177,7 +178,7 @@
                 <input class="email" type="email" placeholder="Email"><br>
                 <input class="number" type="number" placeholder="Phone Number"><br>
                 <textarea name="message" class="message" placeholder="Message"></textarea><br>
-                <input class="form-button" type="submit" value="Send">
+                <button class="form-button" type="submit">Send</button>
             </form>
         </div>
         <div class="map-section">
@@ -187,56 +188,61 @@
         </div>
     </div>
 
-<!--  ------    ------ -----  Footer Section ------ ------- ------- -->
+    <!--  ------    ------ -----  Footer Section ------ ------- ------- -->
 
-<div class="footer-section">
-    <div class="footer-digian">
-        <h3>Digian</h3>
-        <p>Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful</p>
-    </div>
-    <div class="footer-links">
-        <h3>Links</h3>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Service</a></li>
-            <li><a href="">Contact Us</a></li>
-        </ul>
-    </div>
-    <div class="footer-subscribe ">
-        <h3>Subscribe</h3>
-        <form action="">
-            <input type="text">
-            <button>Subscribe</button>
-        </form>
+    <div class="footer-section">
 
-    </div>
-    <div class="footer-address">
-        <h3>Address</h3>
-        <div class="infobox">
-            <div>
-                <span><ion-icon name="location-outline"></ion-icon></span><p> Ashoka Garden, Bhopal Madhya Pradesh India</p>
-            </div>
-            <div>
-                <span><ion-icon name="mail-outline"></ion-icon></span>
-                <a href="mailtokasimahmed573@gmail.com"> kasimahmed573@gmail.com</a>
-            </div>
-            <div>
-                <span><ion-icon name="call-outline"></ion-icon></span>
-                <a href="tel:+919516508978"> +91 951 650 8978</a>
-            </div>
+        <div class="footer-digian">
+            <h3>Digian</h3>
+            <p>Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin
+                words, combined with a handful</p>
 
-            <!-- social media links use zen code-->
-            <ul class="sci">
-                <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
-                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        </div>
+
+        <div class="footer-links">
+            <h3>Links</h3>
+            <ul class="footer-ul">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Contact Us</a></li>
             </ul>
         </div>
-    </div>
 
-</div>
+        <div class="footer-subscribe">
+            <h3>Subscribe</h3>
+            <form action="" class="footer-form">
+                <input type="text" placeholder="Enter email"><br>
+                <button class="footer-btn">Subscribe</button>
+            </form>
+
+        </div>
+
+        <div class="footer-address">
+            <h3>Address</h3>
+            <div class="address-links1">
+                <ul class="footer-address-links1">
+                    <li><a href=""><i class="fa fa-map-marker"></i>&nbsp;&nbsp;&nbsp;Location</a></li>
+                    <li><a href=""><i class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;Call +91 123456789</a></li>
+                    <li><a href=""><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;mail@domain.com</a></li>
+                </ul>
+            </div>
+
+            <!-- social media links-->
+            <div class="address-links2">
+                <ul class="footer-address-links2">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+  
+
 </body>
 
 </html>
