@@ -251,7 +251,9 @@ body {
     display: block;
   }
 }
-
+.moving{
+  text-decoration: none;
+}
 /* -------------------Our Service Section ---------------------*/
 
 .our-service-section {
