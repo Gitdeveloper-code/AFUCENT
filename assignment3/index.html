@@ -1,547 +1,297 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <title>Bootstrip-I</title>
+  </head>
+  
+  <body>
+<!-- --------------- NavBar Section ----------- -->
 
-  <link rel="stylesheet" href="assets/CSS/style.css" />
-  <title>Assignment 3</title>
-</head>
+<nav class="navbar navbar-expand-lg navbar-dark  bg-dark fixed-top ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">BOOTSTRIP-I</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-accordin">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Client</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Web Development</a></li>
+              <li><a class="dropdown-item" href="#">App Development</a></li>
+              <li><a class="dropdown-item" href="#">Full Stack</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+</nav>
 
-<body>
-  <!-- section 1 & 2 navbar and photographer-->
-  <div class="container-fluid" style="
-        background-image: url('./assets/images/background5.jpg');
-        height: 47rem;
-      ">
-    <nav class="navbar mb-5 navbar-expand-lg navbar-light bg-transparent">
-      <div class="container-fluid fixed-top mt-3">
-        <a class="navbar-brand fs-3 fw-bolder text-decoration-none mx-4 p-1" href="#">GlassM5</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+
+<!-- -------------- Slider  Section---------------- -->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/i1.jpg" class="d-block w-100 h-25 " alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/i2.jpg" class="d-block w-100 h-25 " alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/i3.jpg" class="d-block w-100 h-25 " alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+</div>
+
+<!-- -------------- Sections ------------------ -->
+
+<div class="container-fluid">
+   <div class="row" id="service">
+    <div class="col-12">
+      <h3 class="display-6 text-center mt-5 mb-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Atque expedita id quod temporibus.</h3>
+    </div>
+   </div>
+   <!-- -----------Section1 ---------------------->
+   <div class="row justify-content-evenly pt-3 pb-3 ">
+     <div class="col-md-3 text-center mt-5 ">
+      <h1><i class="bi bi-file-code-fill text-primary "></i></h1>
+      <h5>Build for developers</h5>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eius explicabo velit?</p>
+     </div>
+     <div class="col-md-3 text-center mt-5 ">
+      <h1><i class="bi bi-easel-fill text-danger "></i></h1>
+      <h5>Build for developers</h5>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eius explicabo velit?</p>
+     </div>
+     <div class="col-md-3 text-center mt-5 ">
+      <h1><i class="bi bi-calendar-range-fill text-success "></i></h1>
+      <h5>Build for developers</h5>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eius explicabo velit?</p>
+     </div>
+    </div>
+    <hr>
+    <!-- line -->
+    <!-- section1 end -->
+
+    <!-- ------------------Section 2 Growth section------------------- -->
+
+  <div class="row justify-content-evenly pt-3 pb-5 ">
+    <div class="col-md-5 pt3">
+      <img src="images/zoho-developers.png" class="img-fluid " alt=""/>
+    </div>
+    <div class="col-md-5 pt-2 ">
+      <h5 class="mt-1 ">WebSite Development</h5>
+      <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar bg-success" style="width: 40%">40%</div>
+      </div>
+         
+      <h5 class="mt-3">App Development</h5>
+      <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar bg-info text-dark" style="width: 25%">25%</div>
+      </div>
+
+      <h5 class="mt-3">SoftWare Development</h5>
+      <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
+      </div>
+
+      <h5 class="mt-3">SEO</h5>
+      <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar bg-danger" style="width:30%">30%</div>
+      </div>
+
+      <h5 class="mt-3">Markiting</h5>
+      <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar bg-primary " style="width: 100%">100%</div>
+      </div>
+    </div>
+  </div>
+ <!-- section2 end -->
+
+  <!-- ----------------Section 3 Contact ------------------------- -->
+
+  <div class="row justify-content-evenly pt-2 pb-5" style="background-color: #f1f1f1;" id="contact">
+    <div class="col-md-5 mt-5 ">
+      <h3 class="mb-4">Contact Form</h3>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="name" class="form-control" id="name">
+         
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <div class="col-md-5 mt-5">
+      <h3 class="mb-4">Address</h3>
+      <p>
+        1180 kimberly Way, WILLISION PARK<br>
+        New York -11596<br>
+        <i class="bi bi-telephone"></i> : 917-772-5081
+      </p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d145969.07341072385!2d-118.37523310576071!3d34.033656407143845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b93cca9c7ab1%3A0x9b191d3aac3e37!2sLos%20Angeles%20County%20Museum%20of%20Art!5e0!3m2!1sen!2sin!4v1696443080792!5m2!1sen!2sin" style="width: 100%;" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  </div>
+  
+<!-- Section 3 end -->
+
+<!-- ------------------FAQ Section -4------------------------------- -->
+<div class="row justify-content-evenly pt-5 pb-5"id="about-accordin">
+<div class="col-md-10">
+  <h3 class="text-center pb-4">FAQ</h3>
+
+  <div class="accordion accordion-flush border " id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          Accordion Item #1
         </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-          <ul class="navbar-nav align-items-center me-auto mb-2 mb-lg-0 navbar-ul">
-            <li class="nav-item">
-              <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-bold" href="#">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-bold" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-bold" href="#">Contacts</a>
-            </li>
-          </ul>
-          <button class="navbtn mt-2 " type="submit">Send messages</button>
-        </div>
-      </div>
-    </nav>
-    <!-- section -2 photograhper -->
-    <div class="row">
-      <div class="col-lg-7 col-md-8 col-11 section-1 pt-5" style="background-color: rgba(255, 255, 255, 0.5)">
-        <h1 class="display-2 fw-bold">Photographer</h1>
-        <p class="fs-4 fw-medium">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-          ultrices risus eget nunc ullamcorper, ut consectetur eros mattis.
-          Praesent lobortis in est sit amet pretium.
-        </p>
-        <button class="photo-btn">Read more</button>
-      </div>
-      <div class="col-lg-5 col-md-4 col-11 section-1-img">
-        <img src="assets/images/mbr.jpeg" alt="" />
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
       </div>
     </div>
-    <!-- section 2 end -->
-  </div>
-  <!-- section 1 & 2 end navbar and photographer -->
-  <!-- ---------------------------------------------------- -->
-
-  <!-- section 3 Our Service -->
-  <div class="container-fluid our-container" style="
-        background-image: url('./assets/images/background3.jpg');
-        height: 47rem;
-      ">
-    <div class="row justify-content-center mb-5">
-      <div class="col-md-12 text-center col-11">
-        <h1 class="display-5 fw-bold mt-5 mb-5">Our Services</h1>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          Accordion Item #2
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
       </div>
-
-      <div class="col-md-10 d-flex text-center col-11 corner-rounded our-service"
-        style="background-color: rgba(255, 255, 255, 0.5); height: 25rem">
-        <div class="p-3 text-center">
-          <i class="bi bi-lightbulb service-icon"></i>
-          <h4 class="service-h4">Interior Photography</h4>
-          <p class="service-para">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu
-            risus eget sapien pellentesque porttitor nec ut velit.
-          </p>
-        </div>
-        <div class="p-3 text-center">
-          <i class="bi bi-person-circle service-icon"></i>
-          <h4 class="service-h4">Portrait Photo</h4>
-          <p class="service-para">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu
-            risus eget sapien pellentesque porttitor nec ut velit.
-          </p>
-        </div>
-        <div class="p-3 text-center">
-          <i class="bi bi-palette service-icon"></i>
-          <h4 class="service-h4">Art Photo</h4>
-          <p class="service-para">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu
-            risus eget sapien pellentesque porttitor nec ut velit.
-          </p>
-        </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          Accordion Item #3
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
       </div>
     </div>
   </div>
-  <!-- section 3 Our Service end -->
-  <!-- ---------------------------------------------------- -->
-
-  <!-- section 4 About us-->
-  <div class="container-fluid about-us-container" style="
-        background-image: url('./assets/images/background8.jpg');
-        height: 47rem;
-      ">
-    <div class="row justify-content-center">
-      <div class="col-md-4 mt-5">
-        <img src="assets/images/mbr-1.jpeg" alt="" class="img-fluid" style="border-radius: 2rem" />
-      </div>
-      <div class="col-md-6 col-11 mt-5 corner-rounded aboutus-bgc"
-        style="background-color: rgba(255, 255, 255, 0.5); height: 27rem">
-        <h2 class="about-heading">About Us</h2>
-        <div class="row justify-content-center">
-          <div class="col-md-5 col-11">
-            <p class="about-para">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              ultrices risus eget nunc ullamcorper, ut consectetur eros
-              mattis. Praesent lobortis in est sit amet pretium.
-            </p>
-          </div>
-          <div class="col-md-5 col-11">
-            <p class="about-para">
-              Fusce ante libero, ultrices sed ullamcorper quis, volutpat in
-              metus. Mauris pulvinar, neque in porttitor faucibus, tortor
-              enim.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- section 4 About us end -->
-  <!-- ---------------------------------------------------- -->
-
-  <!-- section 5 Our pricing-->
-  <div class="container-fluid pricing-container" style="
-    background-image: url('./assets/images/background4.jpg');
-    height: 47rem;">
-    <div class="row justify-content-center">
-      <div class="col-md-12 text-center">
-        <p class="pricing-p pb-2">OUR PRICING</p>
-        <h3 class="pricing-head">Lorem ipsum dolor sit amet consectetur.</h3>
-      </div>
-    </div>
-    <div class="row justify-content-evenly ">
-      <div class="col-md-3 col-11 corner-rounded pricing-bgc" style="background-color: rgba(255, 255, 255, 0.5)">
-        <h2 class="display-3 pb-3 head-color-font-weight ">$39</h2>
-        <h3 class="h2  head-color-font-weight">Start</h3>
-        <p class="para-color-font-weight pb-2 ">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu
-          risus sapien pellentesque.
-        </p>
-        <button class="price-btn">Buy Now</button>
-      </div>
-      <div class="col-md-3 col-11 corner-rounded pricing-bgc" style="background-color: rgba(255, 255, 255, 0.5)">
-        <h2 class="display-3 pb-3 head-color-font-weight">$59</h2>
-        <h3 class="h2 head-color-font-weight">Basice</h3>
-        <p class="para-color-font-weight pb-2 ">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu
-          risus sapien pellentesque.
-        </p>
-        <button class="price-btn">Buy Now</button>
-      </div>
-      <div class="col-md-3 col-11 corner-rounded pricing-bgc" style="background-color: rgba(255, 255, 255, 0.5)">
-        <h2 class="display-3  pb-3 head-color-font-weight">$89</h2>
-        <h3 class="h2 head-color-font-weight">Pro</h3>
-        <p class="para-color-font-weight pb-2 ">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu
-          risus sapien pellentesque.
-        </p>
-        <button class="price-btn">Buy Now</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- section 5 Our pricing end-->
-  <!-- ---------------------------------------------------- -->
-
-  <!-- section 6 Our work -->
-  <div class="container-fluid work-container" style="
-    background-image: url('./assets/images/background5.jpg');
-    height: 47rem;">
-    <div class="row justify-content-center ">
-      <div class="col-md-12 col-11 mt-5 owr-head-section">
-        <h5>OUR WORKS</h5>
-        <h3 class="work-para">Lorem ipsum dolor sit amet.</h3>
-      </div>
-    </div>
-
-    <div class="row justify-content-evenly  ">
-      <div class="col-md-4 col-12 ">
-        <img src="assets/images/mbr-1.jpg" alt="" class=" img-fluid work-section-img" />
-      </div>
-      <div class="col-md-4 col-12 ">
-        <img src="assets/images/mbr-2.jpg" alt="" class=" img-fluid work-section-img" />
-      </div>
-      <div class="col-md-4 col-12">
-        <img src="assets/images/mbr-3.jpg" alt="" class=" img-fluid work-section-img " />
-      </div>
-    </div>
-  </div>
-
-  <!-- section 6 Our work end-->
-  <!-- ---------------------------------------------------- -->
-
-  <!-- section 7 Progress -->
-  <div class="container-fluid progress-container" style="
-    background-image: url('./assets/images/background1.jpg'); height: 47rem;">
-
-    <div class="row justify-content-center">
-      <div class="col-md-9 col-11 corner-rounded progress-bgc"
-        style="background-color: rgba(255, 255, 255, 0.5); height: 35rem;">
-        <p class=" mt-5 progress-bar-txt">PROGRESS</p>
-        <h2 class="display-6 head-color-font-weight">Our Competence</h2>
-        <p class="para-color-font-weight p-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-          ultrices risus eget nunc ullamcorper, ut consectetur eros mattis.
-          Praesent lobortis in est sit amet pretium. Fusce ante libero,
-          ultrices sed ullamcorper quis, volutpat in metus. Mauris pulvinar,
-          neque in porttitor faucibus.
-        </p>
-
-        <span class="float-start progress-bar-txt">Interior Photography</span>
-        <span class="float-end progress-bar-txt">92%</span><br />
-
-        <div class="progress mt-2 mb-3">
-          <div class="progress-bar" style="" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-            aria-valuemax="100"></div>
-        </div>
-
-        <span class="float-start progress-bar-txt">Portrait Photo</span>
-        <span class="float-end progress-bar-txt">71%</span><br />
-
-        <div class="progress mt-2 mb-3">
-          <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-            aria-valuemax="100"></div>
-        </div>
-        <span class="float-start progress-bar-txt">Art Photo</span>
-        <span class="float-end progress-bar-txt">53%</span><br />
-
-        <div class="progress mt-2 mb-5">
-          <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75"
-            aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- section 7 progress end -->
-  <!-- ---------------------------------------------------- -->
-
-  <!-- section 8 Frequently-->
-  <div class="container-fluid frequentlt-container" style="
-    background-image: url('./assets/images/background5.jpg');
-    height: 47rem;">
-    <div class="row justify-content-center">
-      <div class="col-md-10 col-11 frequentlt-bgc corner-rounded mt-5"
-        style=" background-color: rgba(255, 255, 255, 0.5); height: 35rem;">
-
-        <div class="row mt-5">
-          <div class="col-md-6">
-            <h2 class="display-5 fw-bolder" style="color: #263d5a">
-              Frequently <br />
-              Asked Questions
-            </h2>
-            <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
-              <div class="accordion-item bg-transparent">
-                <h2 class="accordion-header" id="flush-headingOne">
-                  <button class="accordion-button collapsed pt-3 pb-3 fs-4 bg-transparent" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
-                    aria-controls="flush-collapseOne">
-                    Lorem ipsum dolor sit amet
-                  </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse pt-3 pb-3"
-                  aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">
-                    Lorem Ipsum dolor sit amet, consectetur adipisicing elit.
-                    Voluptatibus, voluptas explicabo molestiae tempore natus
-                    velit sed aliquam ut! Culpa asperiores, error ullam qui!
-                    Commodi nobis distinctio aperiam totam perferendis quas.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item bg-transparent">
-                <h2 class="accordion-header bg-transparent" id="flush-headingTwo">
-                  <button class="accordion-button collapsed pt-3 pb-3 fs-4 bg-transparent" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                    aria-controls="flush-collapseTwo">
-                    Maecenas vulputate in enim
-                  </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">
-                    Lorem Ipsum dolor sit amet, consectetur adipisicing elit.
-                    Id ullam sint repellat! Aliquid, odio magni ab rem eos
-                    odit, deleniti laboriosam voluptas inventore, iste
-                    suscipit sed ipsa! Ut aliquam, alias.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item bg-transparent">
-                <h2 class="accordion-header bg-transparent" id="flush-headingThree">
-                  <button class="accordion-button collapsed pt-3 pb-3 fs-4 bg-transparent" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
-                    aria-controls="flush-collapseThree">
-                    Curabitur ut venenatis urna
-                  </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">
-                    Lorem Ipsum dolor sit amet, consectetur adipisicing elit.
-                    Voluptatibus, voluptas explicabo molestiae tempore natus
-                    velit sed aliquam ut! Culpa asperiores, error ullam qui!
-                    Commodi nobis distinctio aperiam totam perferendis quas.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-5 ">
-            <img src="assets/images/mbr-4.jpg" alt="" class="img-fluid frequently-img" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- section 8 Frequently end -->
-  <!-- ---------------------------------------------------- -->
-
-  <!-- section 9 Our Clients-->
-  <div class="container-fluid client-container" style="
-    background-image: url('./assets/images/background2.jpg');
-    height: 47rem;">
-    <div class="row justify-content-evenly">
-      <div class="col-md-12 text-center mt-5 text-white fw-bold">
-        <h4>OUR CLIENTS</h4>
-        <h2>We love to work with our clients</h2>
-      </div>
-
-      <div class="row justify-content-evenly text-center mt-3">
-
-        <div class="col-md-3 mt-4 col-12 client-bgc"
-          style="background-color: rgba(255, 255, 255, 0.5); border-radius: 1rem; height: 15rem;">
-
-          <div class="d-flex align-items-center h-100">
-            <img src="assets/images/1.png" alt="" class="w-50 mx-auto" />
-          </div>
-
-        </div>
-        <div class="col-md-3 mt-4 col-12 client-bgc"
-          style="background-color: rgba(255, 255, 255, 0.5); border-radius: 1rem; height: 15rem;">
-          <div class="d-flex align-items-center h-100">
-            <img src="assets/images/2.png" alt="" class="w-50 mx-auto" />
-          </div>
-        </div>
-        <div class="col-md-3 mt-4 col-12 client-bgc"
-          style="background-color: rgba(255, 255, 255, 0.5); border-radius: 1rem; height: 15rem;">
-          <div class="d-flex align-items-center h-100">
-            <img src="assets/images/3.png" alt="" class="w-50 mx-auto" />
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-evenly text-center mt-3">
-        <div class="col-md-3 mt-4 col-12 client-bgc"
-          style="background-color: rgba(255, 255, 255, 0.5); border-radius: 1rem; height: 15rem;">
-          <div class="d-flex align-items-center h-100">
-            <img src="assets/images/4.png" alt="" class="w-50 mx-auto" />
-          </div>
-        </div>
-        <div class="col-md-3 mt-4 col-12 client-bgc"
-          style="background-color: rgba(255, 255, 255, 0.5); border-radius: 1rem; height: 15rem;">
-          <div class="d-flex align-items-center h-100">
-            <img src="assets/images/5.png" alt="" class="w-50 mx-auto" />
-          </div>
-        </div>
-        <div class="col-md-3 mt-4 col-12 client-bgc"
-          style="background-color: rgba(255, 255, 255, 0.5); border-radius: 1rem; height: 15rem;">
-          <div class="d-flex align-items-center h-100">
-            <img src="assets/images/1.png" alt="" class="w-50 mx-auto" />
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-  </div>
-  <!-- section 9 Our Clients end-->
-  <!-- ---------------------------------------------------- -->
-
-  <!-- section 10 Say hello-->
-  <div class="container-fluid" style="
-    background-image: url('./assets/images/background8.jpg');
-    height: 25rem;">
-    <div class="row justify-content-center">
-      <div class="col-md-8 col-11  text-center mt-5" style="
-            background-color: rgba(255, 255, 255, 0.5);
-            border-radius: 1rem;
-            height: 15rem;
-          ">
-        <p class="mt-5 fs-6" style="">HAVE A NEW PROJECT IN MIND?</p>
-        <h1 class="display-3 fw-bold">Say Hello</h1>
-        <p>
-          <a href="" class="text-decoration-none text-black">hello@yoursite.com</a>
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- section 10 Say hello end-->
-  <!-- ---------------------------------------------------- -->
-
-  <!-- section 11 map  -->
-  <div class="container-fluid" style="
-    background-image: url('./assets/images/background3.jpg');
-    height: 47rem;">
-    <div class="row justify-content-center align-items-center text-center">
-      <div class="col-md-10 col-12">
-        <iframe style="border-radius: 2rem; margin-top: 10rem"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.03608971403!2d-74.30933232776687!3d40.697539959864436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1696771540502!5m2!1sen!2sin"
-          height="450" style="border: 0" class="w-100" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-  </div>
-  <!-- section 11 end -->
-  <!-- ---------------------------------------------------- -->
-
-  <!-- section 12 Gabriel Moreira-->
-  <div class="container-fluid gabrial-container" style="
-    background-image: url('./assets/images/background5.jpg');
-    height: 47rem;">
-    <div class="row justify-content-center ">
-
-      <div class="col-md-4 col-12  mt-5 p-5 gabriel-img">
-        <img src="assets/images/team1.jpg" alt="" class="img-fluid object-fit-cover w-100 "
-          style="border-radius: 2rem" />
-      </div>
-
-      <div class="col-md-6 col-11 p-5  mt-5 gabrial-bgc" style="
-            background-color: rgba(255, 255, 255, 0.5);
-            border-radius: 1rem;
-            height: 20rem;
-          ">
-        <h2 class="mt-5 p-3 ">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam orci
-          nisl, rhoncus viverra fringilla in, luctus vitae elit.
-        </h2>
-        <p class="">Gabriel Moreira</p>
-      </div>
-
-    </div>
-
-  </div>
-  <!-- section 12 Gabriel Moreira end-->
-  <!-- ---------------------------------------------------- -->
-
-  <!-- section 13 contact us -->
-  <!-- <div class="container-fluid" style="
-    background-image: url('./assets/images/background1.jpg');
-    height: 50rem;">
-    <div class="row justify-content-center">
-      <div class="col-md-12  text-center" style="
-            background-color: rgba(255, 255, 255, 0.7);
-            border-radius: 1rem;
-            height: 40rem;">
-        <h3 class="mt-5">Contact Us</h3>
-     
-      <div class="col-lg-6 col-md-12 col-sm-12 form-group mb-3">
-        <input type="text" name="name" placeholder="Name" class="form-control display-7">
-    </div>
-    <div class="col-lg-6 col-md-12 col-sm-12 form-group mb-3">
-      <input type="text" name="name" placeholder="Name" class="form-control display-7">
-  </div>
-  <div class="col-lg-6 col-md-12 col-sm-12 form-group mb-3">
-    <input type="text" name="name" placeholder="Name" class="form-control display-7">
 </div>
-<div class="col-lg-6 col-md-12 col-sm-12 form-group mb-3">
-  <input type="text" name="name" placeholder="Name" class="form-control display-7">
-</div>
-</div>
-</div>
-      </div>
-    </div>
-  </div> -->
-  <!-- section 13  contact us end-->
-  <!-- ---------------------------------------------------- -->
 
-  <!-- section 14 Footer -->
-  <div class="container-fluid footer-container" style="background-color: #131729; height:25rem" >
-    <div class="row justify-content-center text-white ">
-      <div class="col-md-4 footer-contain">
-        <h4>About Us</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-          ultrices risus eget nunc ullamcorper, ut consectetur eros mattis.
-          Convallis fringilla arcu consequat condimentum lectus.
-        </p>
-      </div>
-      <div class="col-md-2">
-        <h4>Company</h4>
-        <p>
-          <a href="#" class="link-dark text-decoration-none text-white">About</a><br />
-          <a href="#" class="link-dark text-decoration-none text-white">Jobs</a><br />
-          <a href="#" class="link-dark text-decoration-none text-white">Contact</a><br />
-          <a href="#" class="link-dark text-decoration-none text-white">Blog</a><br />
-        </p>
-      </div>
-      <div class="col-md-2">
-        <h4>Themes</h4>
-        <p>
-          <a href="#" class="link-dark text-decoration-none text-white">Feature</a><br />
-          <a href="#" class="link-dark text-decoration-none text-white">Team</a><br />
-          <a href="#" class="link-dark text-decoration-none text-white">Pricing</a><br />
-          <a href="#" class="link-dark text-decoration-none text-white">Info</a><br />
-        </p>
-      </div>
-      <div class="col-md-2">
-        <h4>Support</h4>
-        <p>
-          <a href="#" class="link-dark text-decoration-none text-white">Contacts</a><br />
-          <a href="#" class="link-dark text-decoration-none text-white">Testimonial</a><br />
-          <a href="#" class="link-dark text-decoration-none text-white">Terms of Services</a><br />
-          <a href="#" class="link-dark text-decoration-none text-white">Help</a><br />
-        </p>
-      </div>
-    </div>
+</div>
+
+<!-- Section 4 end -->
+
+<!-- ------------------Footer Section 5 ------------------------- -->
+
+<div class="row justify-content-evenly bg-dark text-white pt-2 pb-3">
+  
+  <div class="col-md-3 pt-4 text-center ">
+<h5 class="pb-2 ">BOOTSTRIP-I</h5>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+   Vitae ullam obcaecati voluptatum.
+  consectetur adipisicing elit. 
+  Vitae ullam obcaecati voluptatum.</p>
+</p>
   </div>
-  <!--  section 14 Footer -->
-  <!-- ---------------------------------------------------- -->
+  <div class="col-md-3 pt-4 text-center ">
+    <h5 class="pb-2 ">Important Links</h5>
+    <p>
+      <a href="#" class="link-light text-decoration-none ">Home</a><br>
+      <a href="#" class="link-light text-decoration-none ">About Us</a><br>
+      <a href="#" class="link-light text-decoration-none ">Contact Us</a><br>
+      <a href="#" class="link-light text-decoration-none ">Our Team</a><br>
+      <a href="#" class="link-light text-decoration-none ">Our Client</a><br>
+    </p>
+  </div>
+  <div class="col-md-3 pt-4 text-center">
+    <h5 class="pb-2 ">Important Links</h5>
+    <p>
+      1180 kimberly Way,<br>
+       WILLISION PARK<br>
+      New York -11596<br>
+      <i class="bi bi-telephone"></i> : 917-772-5081
+    </p>
+  </div>
+</div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-</body>
+<!-- section 5 end -->
 
+<!-- ----Copy Write Section 6 -->
+<div class="row bg-secondary text-white text-center p-2">
+  <div class="col-md-12">
+    <p>
+      Copyright 1999-2023 by itdeveloper. All Rights Reseved.
+    </p>
+  </div>
+</div>
+
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    
+  </body>
 </html>
