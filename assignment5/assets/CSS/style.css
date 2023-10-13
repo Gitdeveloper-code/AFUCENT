@@ -20,7 +20,6 @@
   margin-right: 3rem;
 }
 /* Photograhper-Section in css */
-
 .photograhper-section{
   margin-top: 5rem !important;
   padding: 2rem !important;
@@ -37,8 +36,41 @@
   .navbtn {
     margin-left: 0;
   }
-  /* section 1 & 2 */
+  .section-1-img{
+    position: relative !important;
+    right: 1rem !important;
+    /* width: 100%; */
+  }
 
+  .section-1-img img{
+    width: 42vw !important;
+    border-radius: 2rem;
+    margin-top: 6rem !important;
+  }
+  /* section 1 & 2 */
+  .about-para {
+    font-size: 15px !important;
+    color: #263d5a;
+  margin-left: 0rem;
+
+}
+.aboutus-bgc{
+margin-top: 1rem !important;
+}
+}
+/*Media Query  */
+@media (max-width: 1010px) {
+  .navbar-ul {
+    margin-left: 0;
+  }
+  .navbar-ul a {
+    margin-left: 0rem;
+  }
+  .navbtn {
+    margin: 0 auto;
+    display: block;
+  }
+  
   .section-1 {
     left: 1rem !important;
     position: unset;
@@ -68,9 +100,7 @@
   padding-bottom: 5rem !important;
   }
   /* Our Service */
-  .our-container{
-    padding-bottom: 1rem !important;
-  }
+  
   .our-service{
     display: flex;
     flex-direction: column;
@@ -84,6 +114,8 @@
   .aboutus-bgc{
     background-color: rgba(255, 255, 255, 0.5);
     height: 22rem !important;
+    margin-top: 4rem !important;
+    
   }
   .about-heading{
     font-size: 2.5rem !important;
@@ -117,7 +149,7 @@
     padding-bottom: 5rem !important;
   }
   .work-section-img {
-    height: 23rem;
+    height: 23rem !important;
     object-fit: cover;
     border-radius: 1rem;
     margin-top: 2rem !important;
@@ -182,19 +214,6 @@
   }
   .footer-contain {
     margin-top: 5rem !important;
-  }
-}
-/*Media Query  */
-@media (max-width: 998px) {
-  .navbar-ul {
-    margin-left: 0;
-  }
-  .navbar-ul a {
-    margin-left: 0rem;
-  }
-  .navbtn {
-    margin: 0 auto;
-    display: block;
   }
 }
 
@@ -367,4 +386,42 @@
 .photograhper-paratext{
 font-size: 1.3rem !important;
 font-weight: 600 !important;
+}
+
+.top-bot-padding{
+  padding-top: 5rem !important;
+  padding-bottom: 5rem  !important;
+
+}
+
+.aboutus-bgc{
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 22rem !important;
+  margin-top: 10rem ;
+}
+
+.work-section-img {
+  height: 22rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-top: 2rem !important;
+}
+
+
+/* contact input */
+.contact-input{
+background-color: rgba(255, 255, 255, 0.7);
+border-radius: 0.5rem;
+padding: 0.8rem !important;
+}
+
+.contact-btn {
+  background-color: #a148ff !important;
+  background: linear-gradient(90deg, #a148ff 0%, #ff6f45 100%);
+  border: none;
+  color: white;
+  padding: 12px 2rem;
+  border-radius: 25px;
+  font-size: 19px;
+  font-weight: 700;
 }
